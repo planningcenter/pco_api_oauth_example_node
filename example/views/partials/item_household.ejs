@@ -1,0 +1,13 @@
+<div class="col">
+  <div class="card" style="width: 18rem;">
+    <img src="<%= household.attributes.avatar %>" class="card-img-top">
+    <h5 class="card-title">
+      <%= household.attributes.name %>
+    </h5>
+    <div class="card-body">
+      <a href="/people/households/<%= household.id %>" class="btn btn-primary">
+        View <%= household.attributes.member_count %> member<%= household.attributes.member_count> 1 ? 's' : '' %>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head'); %>
+
+  <body class="container">
+    <%- include('./partials/header'); %>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
+      <div class="container">
+        <% apps.forEach(function(app){ %>
+          <a class="btn btn-primary" role="button" href="<%= app.toLowerCase() %>">
+            <%= app.toLowerCase() %>
+          </a>
+          <% }); %>
+      </div>
+  </body>
+
+</html>

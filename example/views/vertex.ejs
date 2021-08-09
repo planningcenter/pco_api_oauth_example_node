@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head'); %>
+
+  <body class="container">
+    <%- include('./partials/header'); %>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="/">
+              Home
+            </a>
+          </li>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="/<%= app %>">
+              <%= app %>
+            </a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <%= vertexName %>
+          </li>
+        </ol>
+      </nav>
+      <div class="row justify-content-start">
+        <div class="col-auto">
+          <a class="btn btn-primary" role="button" href="/<%= app.toLowerCase() %>/<%= vertexName %>/list">
+            List
+          </a>
+        </div>
+        <div class="col-auto">
+          <a class="btn btn-primary" role="button" href="/<%= app.toLowerCase() %>/<%= vertexName %>/new">
+            New
+          </a>
+        </div>
+        <div class="col-auto">
+          <form class="row g-1" action="/<%= app %>/<%= vertexName %>/get" method="POST">
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-3">Get</button>
+            </div>
+            <div class="col-3">
+              <input type="text" class="form-control" id="inputID" placeholder="ID#" name="id">
+            </div>
+          </form>
+        </div>
+      </div>
+  </body>
+
+</html>

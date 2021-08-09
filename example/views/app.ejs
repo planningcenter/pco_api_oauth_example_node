@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head'); %>
+
+  <body class="container">
+    <%- include('./partials/header'); %>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="/">
+              Home
+            </a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <%= app %>
+          </li>
+        </ol>
+      </nav>
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-1">
+            <% vertices.forEach(function(vertex){ %>
+              <% let key=Object.keys(vertex)[0] %>
+                <a class="btn btn-primary" role="button" href="/<%= app %>/<%= key %>">
+                  <%= key.toLowerCase() %>
+                </a>
+                <% }); %>
+          </div>
+        </div>
+      </div>
+  </body>
+
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head'); %>
+
+  <body class="container">
+    <%- include('./partials/header'); %>
+      <div class="container">
+        <div>
+          <%= err.constructor.name || 'Error' %>: <%= err.status || err.name %>
+              <%= err.statusText || err.message %>
+        </div>
+      </div>
+  </body>
+
+</html>

@@ -1,0 +1,10 @@
+<div class="col">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <%= JSON.stringify(item.attributes) %>
+      <a href="/<%= app %>/<%= vertexName %>/<%= item.id %>" class="btn btn-primary">
+        <%= item.type %>( <%= item.id %> )
+      </a>
+    </div>
+  </div>
+</div>

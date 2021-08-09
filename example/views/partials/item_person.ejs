@@ -1,0 +1,10 @@
+<div class="col">
+  <div class="card" style="width: 18rem;">
+    <img src="<%= person.attributes.demographic_avatar_url %>" class="card-img-top">
+    <div class="card-body">
+      <a href="/people/people/<%= person.id %>" class="btn btn-primary">
+        <%= person.attributes.name %> ( <%= person.id %> )
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+{
+  "name": "pco-api",
+  "version": "0.0.1",
+  "description": "PCO API wrapper for Node",
+  "keywords": [
+    "planningcenter",
+    "pco",
+    "api"
+  ],
+  "homepage": "http://planning.center/",
+  "author": "Robert Leib <robert.leib@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/planningcenter/pco_api_oauth_example_node"
+  },
+  "engines": {
+    "node": "^8.1 || >=10.*"
+  },
+  "main": "lib/pco.js",
+  "license": "MIT",
+  "scripts": {},
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "node-fetch": "^2.6.1",
+    "pluralize": "^8.0.0"
+  }
+}

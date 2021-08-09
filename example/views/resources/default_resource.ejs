@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head'); %>
+
+  <body class="container">
+    <%- include('../partials/header'); %>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="/">
+              Home
+            </a>
+          </li>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="/<%= app %>">
+              <%= app %>
+            </a>
+          </li>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="/<%= app %>/<%= vertexName %>">
+              <%= vertexName %>
+            </a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Get (<%= item.id %>)
+          </li>
+        </ol>
+      </nav>
+      <div class="col-md-8">
+        <div class="card mb-3">
+          <div class="card-body">
+            <div class="container">
+              <pre>
+                <%- rawJSON %>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+
+</html>

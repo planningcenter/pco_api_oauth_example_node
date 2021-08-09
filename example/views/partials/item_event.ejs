@@ -1,0 +1,16 @@
+<div class="col">
+  <div class="card" style="margin: 6px; width: 18rem;">
+    <img src="<%= event.attributes.logo_url || 'https://picsum.photos/300/170' %>" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">
+        <%= event.attributes.name %>
+      </h5>
+      <div>
+        <%= event.attributes.event_time_summary %>
+      </div>
+      <a href="/registrations/events/<%= event.id %>" class="btn btn-primary">
+        View event
+      </a>
+    </div>
+  </div>
+</div>

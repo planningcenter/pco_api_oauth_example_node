@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head'); %>
+
+  <body class="container">
+    <%- include('../partials/header'); %>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="/">
+              Home
+            </a>
+          </li>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="/<%= app %>">
+              <%= app %>
+            </a>
+          </li>
+          <li class="breadcrumb-item" aria-current="page">
+            <a href="/<%= app %>/<%= vertexName %>">
+              <%= vertexName %>
+            </a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            New
+          </li>
+        </ol>
+      </nav>
+      <div class="container">
+        <form name="new_<%= vertexName %>" method="POST" action=<%=postPath %>>
+          <div class="mb-3">
+            <label for="inputFirst" class="form-label">First name</label>
+            <input type="text" class="form-control" id="inputFirst" name="first_name">
+          </div>
+          <div class="mb-3">
+            <label for="inputLast" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="inputLast" name="last_name">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+  </body>
+
+</html>

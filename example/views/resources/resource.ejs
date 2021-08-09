@@ -1,0 +1,9 @@
+<% switch(itemType) { case 'person' : %>
+  <%- include('./person', { item, vertexName, app }) %>
+    <% break; case 'event' : %>
+      <%- include('./event', { item, vertexName, app }) %>
+        <% break; case 'household' : %>
+          <%- include('./household', { item, vertexName, app }) %>
+            <% break; default: %>
+              <%- include('./default_resource', { item, vertexName, app }) %>
+                <% break; } %>
