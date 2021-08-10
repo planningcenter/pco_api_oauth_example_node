@@ -28,6 +28,7 @@
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "node-fetch": "^2.6.1",
-    "pluralize": "^8.0.0"
+    "pluralize": "^8.0.0",
+    "prettier": "^2.3.2"
   }
 }
