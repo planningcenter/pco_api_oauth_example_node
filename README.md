@@ -1,11 +1,5 @@
 # PCO API Wrapper for Node
 
-## Installation
-
-```
-yarn add pco_api
-```
-
 ## Usage
 
 ```
