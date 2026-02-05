@@ -1,6 +1,11 @@
-# PCO API Wrapper for Node
+# ARCHIVED
 
-## Usage
+This repository is no longer maintained and has been archived for historical purposes.
+For more information on using our APIs and other current developer resources, check out the developer page on our site: https://developer.planning.center/
+
+## PCO API Wrapper for Node
+
+### Usage
 
 ```
 const PCOApi = require('pco_api')
@@ -30,7 +35,7 @@ Or use 'dot' notation to specific PCO Apps and vertices
 pcoClient.People.households.get(1345)
 ```
 
-## Apps + Resources
+### Apps + Resources
 
 Using the dot notation syntax, the pattern is
 
@@ -49,9 +54,9 @@ Apps:
 - [Services](https://developer.planning.center/docs/#/apps/services/)
 - [Webhooks](https://developer.planning.center/docs/#/apps/webhooks/)
 
-## Actions
+### Actions
 
-### get
+#### get
 
 Returns a single resource, by id
 
@@ -59,7 +64,7 @@ Returns a single resource, by id
 pcoClient.Registrations.people.get(1234)
 ```
 
-### list
+#### list
 
 Returns a paginated list of the resouce
 
@@ -67,10 +72,10 @@ Returns a paginated list of the resouce
 pcoClient.Registrations.people.list()
 ```
 
-### create
+#### create
 
-### delete
+#### delete
 
-## Copyright & License
+### Copyright & License
 
 Copyright Ministry Centered Technologies. Licensed MIT.
